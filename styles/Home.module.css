@@ -1,3 +1,34 @@
 .container {
-  padding: 0 2rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 85rem;
+  padding: 0 1rem;
+  color: white;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container button {
+  cursor: pointer;
+}
+@media (max-width: 1450px) {
+  .container {
+    max-width: 70rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 50rem;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 70rem;
+  }
 }

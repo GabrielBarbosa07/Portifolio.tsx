@@ -1810,7 +1810,12 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
-"tailwindcss@^3.2.0":
+"tailwind-scrollbar@^2.1.0-preview.0":
+  "integrity" "sha512-FEyIS5G92onTdp+HbDyP2+hT6bSLFOWqzkWY03PujxmBDeQeqOL9xnmTYDzqFFpOAZWJCHx1QYUo8M18bMNpnA=="
+  "resolved" "https://registry.npmjs.org/tailwind-scrollbar/-/tailwind-scrollbar-2.1.0-preview.0.tgz"
+  "version" "2.1.0-preview.0"
+
+"tailwindcss@^3.2.0", "tailwindcss@3.x":
   "integrity" "sha512-ARh/W0uH5UlWIC2nn02V0+5fyF0k6qZliyt4QYic2upOhPUE/Spu1EURNc9txJ3+4j8OEmdigqfDpw4d2tA4vA=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.2.0.tgz"
   "version" "3.2.0"

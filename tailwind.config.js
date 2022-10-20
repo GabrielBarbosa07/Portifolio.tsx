@@ -5,20 +5,30 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      "b-200": "#7AC7E3",
-      "b-500": "#313958",
-      "b-700": "#1B2138",
-      "b-800": "#1E253E",
-      "b-900": "#11172B",
+    extend: {
+      colors: {
+        "bl-200": "#7AC7E3",
+        "bl-500": "#313958",
+        "bl-700": "#1B2138",
+        "bl-800": "#1E253E",
+        "bl-900": "#11172B",
 
-      "gr-300": "#C4C4C4",
-      "gr-600": "#848DA0",
-      "gr-700": "#444B5B",
+        "gra-300": "#C4C4C4",
+        "gra-600": "#848DA0",
+        "gra-700": "#444B5B",
 
-      "gre-200": "#0EE7B7",
+        "gree-200": "#0EE7B7",
+
+        error: "#d45d5d",
+      },
+      fontFamily: {
+        sans: ["Montserrat", "JetBrains Mono", "sans-serif"],
+      },
+    },
+
+    backgroundImage: {
+      gradient: "linear-gradient(225deg, #313860 0%, #11172b 100%)",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
