@@ -22,7 +22,9 @@ module.exports = {
         error: "#d45d5d",
       },
       fontFamily: {
-        sans: ["Montserrat", "JetBrains Mono", "sans-serif"],
+        mont: ["Montserrat"],
+        sans: ["sans-serif"],
+        mono: ["JetBrains Mono"],
       },
     },
 
