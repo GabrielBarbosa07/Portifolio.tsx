@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Image from "next/image";
 import picture from "../../assets/my-pic.jpg";
+import styles from "../../../styles/HomeHero.module.css";
 import HeroContent from "./HeroContent";
 import HeroHeader from "./HeroHeader";
 
@@ -16,7 +17,7 @@ export function HomeHero() {
       <div className=" min-[210px]:w-full">
         <HeroHeader />
 
-        <section className="flex flex-col max-[640px]:items-center w-full gap-8">
+        <section className={styles.heroContainer}>
           <HeroContent
             comment="//Minha apresentação"
             objName="Infos"
@@ -27,7 +28,6 @@ export function HomeHero() {
           />
 
           <HeroContent
-            positionRight={true}
             objName="Cargo"
             keyOne="Função:"
             valueOne="Dev Front-end,"

@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-
+import styles from "../../../styles/HomeHero.module.css";
 interface Props {
   comment?: string;
   objName: string;
@@ -7,7 +7,6 @@ interface Props {
   valueOne: string;
   keyTwo: string;
   valueTwo: string;
-  positionRight?: boolean;
 }
 
 export default function HeroContent({
@@ -17,17 +16,15 @@ export default function HeroContent({
   valueOne,
   keyTwo,
   valueTwo,
-  positionRight,
- 
 }: Props) {
   return (
-    <main
-      key={objName}
-      className={`
-      ${positionRight ? "items-end" : "items-start"} p-4 text-white w-96 bg-gradient font-mono font-light  
+    <main key={valueOne} className={styles.hero}>
+      <div
+        className={`
+     p-4 text-white w-96 bg-gradient font-mono font-light  
       hover:brightness-125 transition-all duration-700  max-[640px]:w-full
       `}
-    >
+      >
         <span className="block text-gra-600">{comment}</span>
         <span className="text-[#c38cdd] mr-2">{objName}</span>
         {"\u007b"}
@@ -41,7 +38,7 @@ export default function HeroContent({
           <br />
         </div>
         {"\u007d"}
-     
+      </div>
     </main>
   );
 }
