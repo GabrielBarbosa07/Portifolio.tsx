@@ -7,7 +7,7 @@ import HeroHeader from "./HeroHeader";
 
 export function HomeHero() {
   return (
-    <section className="flex max-[1024px]:mb-28 max-[640px]:mb-1 max-[640px]:flex-col-reverse gap-8 items-center justify-center mt-10 bg-bl-900">
+    <section className="flex max-[2024px]:mb-28 max-[640px]:mb-20 max-[640px]:flex-col-reverse gap-8 items-center justify-center mt-10 bg-bl-900">
       <Image
         src={picture}
         alt="Minha foto"

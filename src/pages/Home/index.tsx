@@ -1,3 +1,4 @@
+import Experiences from "../../components/Experiences";
 import { HomeHero } from "../../components/HomeHero";
 
 export default function HomePage() {
@@ -5,6 +6,7 @@ export default function HomePage() {
     <div className="flex flex-col w-full min-h-[75%] ">
       <main className="">
         <HomeHero />
+        <Experiences />
       </main>
     </div>
   );
