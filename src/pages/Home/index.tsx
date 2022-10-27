@@ -1,13 +1,13 @@
 import Experiences from "../../components/Experiences";
 import { HomeHero } from "../../components/HomeHero";
+import Projetos from "../../components/projetos";
 
 export default function HomePage() {
   return (
-    <div>
-      <main className="">
-        <HomeHero />
-        <Experiences />
-      </main>
-    </div>
+    <main>
+      <HomeHero />
+      <Experiences />
+      <Projetos />
+    </main>
   );
 }
