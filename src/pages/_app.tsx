@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  //
   return (
     <div className="bg-bl-900 font-normal font-sans min-h-screen min-w-[280px]">
       <Header />

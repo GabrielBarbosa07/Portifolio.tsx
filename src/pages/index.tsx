@@ -4,7 +4,7 @@ import HomePage from "./Home";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-bl-900 w-full mt-6 mx-auto max-w-[90rem] px-4">
+    <div className="bg-bl-900 mx-auto max-w-[90rem] px-4">
       <div>
         <Head>
           <title>Meu Portifólio</title>
