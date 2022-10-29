@@ -1,0 +1,43 @@
+.ProjetosItemContainer {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.ProjetosItemContainer:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.ProjetoItemText {
+  position: absolute;
+  top: 3rem;
+  right: -10rem;
+  transition: 0.5s;
+  width: fit-content;
+}
+
+.ProjetosItemContainer:hover > section > .ProjetoItemText {
+  right: -12rem;
+}
+
+.ProjetosItemContainer:nth-child(even):hover > section > .ProjetoItemText {
+  left: -12rem;
+}
+
+.ProjetosItemContainer:nth-child(even) > section > .ProjetoItemText {
+  text-align: right;
+  right: 0;
+  left: -10rem;
+}
+
+.ProjetosItemContainer:nth-child(even) > button {
+  margin: 3rem 5rem 0px 0px;
+}
+
+@media (max-width: 1024px) {
+  .ProjetosItemContainer {
+    gap: 2rem;
+  }
+}

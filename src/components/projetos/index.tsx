@@ -16,6 +16,10 @@ export default function Projetos() {
         imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU" />
         <ProjetoItem 
         imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU" />
+        <ProjetoItem 
+        imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU" />
+        <ProjetoItem 
+        imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU" />
       </section>
     </section>
   );

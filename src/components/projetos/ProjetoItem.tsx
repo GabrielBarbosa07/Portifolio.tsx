@@ -1,20 +1,21 @@
 import Link from "next/link";
 import { AiOutlineRightCircle } from "react-icons/ai";
+import styles from "../../../styles/ProjetosItemContainer.module.css";
 interface Props {
   imgUrl: string;
 }
 
 export default function ProjetoItem({ imgUrl }: Props) {
   return (
-    <section className="w-full flex h-[25rem] items-end relative">
+    <section className={styles.ProjetosItemContainer}>
       <section
         style={{
           backgroundImage: `url(${imgUrl})`,
         }}
         className={`w-[50rem] h-full relative bg-cover bg-no-repeat bg-center`}
       >
-        <div className="absolute w-full h-full bg-gradient opacity-50 duration-700" />
-        <div className="absolute top-12 right-[-10rem] duration-500 w-fit">
+        <div className="absolute w-full h-full bg-gradient opacity-75 duration-700" />
+        <div className={styles.ProjetoItemText}>
           <h1 className="text-gree-200 text-[2.5rem] [text-shadow:_-4px_5px_22px_#11172b]">
             Projeto 01
           </h1>
