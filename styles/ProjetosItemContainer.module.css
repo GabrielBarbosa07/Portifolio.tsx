@@ -32,12 +32,81 @@
   left: -10rem;
 }
 
+.ProjetosItemContainer:hover > button > a {
+  color: #0ee7b7;
+}
+
 .ProjetosItemContainer:nth-child(even) > button {
   margin: 3rem 5rem 0px 0px;
 }
 
+@media (max-width: 1536px) {
+  .ProjetosItemContainer > section {
+    width: 40rem;
+  }
+}
 @media (max-width: 1024px) {
   .ProjetosItemContainer {
     gap: 2rem;
+  }
+
+  .ProjetosItemContainer > section {
+    width: 100%;
+  }
+
+  .ProjetosItemContainer > section > .ProjetoItemText {
+    left: 1rem;
+    top: 1rem;
+  }
+
+  .ProjetosItemContainer > button,
+  .ProjetosItemContainer:nth-child(even) > button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    margin: 0;
+  }
+
+  .ProjetosItemContainer:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .ProjetosItemContainer:nth-child(even) > section {
+    width: 100%;
+  }
+
+  .ProjetosItemContainer:nth-child(even) > section > .ProjetoItemText {
+    left: 1rem;
+    top: 1rem;
+    text-align: left;
+  }
+
+  .ProjetosItemContainer:nth-child(even):hover > section > .ProjetoItemText {
+    left: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ProjetosItemContainer {
+    height: 17rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .ProjetosItemContainer > button {
+    height: auto;
+  }
+
+  .ProjetosItemContainer > button > a {
+    font-size: 1.5rem;
+    gap: 0.8rem;
+  }
+
+  .ProjetosItemContainer > section > .ProjetoItemText h1 {
+    font-size: 1.7rem;
+  }
+
+  .ProjetosItemContainer > section > .ProjetoItemText h2 {
+    font-size: 1.2rem;
   }
 }

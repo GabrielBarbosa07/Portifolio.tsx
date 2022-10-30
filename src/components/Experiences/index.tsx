@@ -4,7 +4,7 @@ import ExperienceItem from "./ExperienceItem";
 
 export default function Experiences() {
   return (
-    <section className="w-full mt-16">
+    <section className="w-full my-16">
       <SectionTitle key={0} title="01 Ano" description="de experiência" />
 
       <section className={styles.ExperienceContent}>
