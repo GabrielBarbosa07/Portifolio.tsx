@@ -1,14 +1,14 @@
 import styles from "../../../styles/ProjetosItemContainer.module.css";
 import Link from "next/link";
 import { AiOutlineRightCircle } from "react-icons/ai";
-interface Props {
+interface ProjectItemProps {
   title: string;
   type: string;
   slug: string;
   imgUrl: string;
 }
 
-export default function ProjetoItem({ title, type, slug, imgUrl }: Props) {
+export default function ProjectItem({ title, type, slug, imgUrl }: ProjectItemProps) {
   return (
     <section className={styles.ProjetosItemContainer}>
       <section

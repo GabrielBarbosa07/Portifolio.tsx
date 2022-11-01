@@ -1,31 +1,26 @@
-import Head from "next/head";
 import Link from "next/link";
 import SectionTitle from "../SectionTitle";
-import ProjetoItem from "./ProjetoItem";
+import ProjectItem from "./ProjectItem";
 
-export default function Projetos() {
+export default function Projects() {
   return (
     <section className="w-full flex flex-col items-center gap-20 max-[640px]:gap-16 max-[2024px]:my-28 max-[640px]:my-10">
-      <Head>
-        <title>Projetos</title>
-      </Head>
-
       <SectionTitle title="Ultimos Projetos" />
 
       <section className="w-full flex flex-col gap-16 max-[1024px]:gap-8">
-        <ProjetoItem
+        <ProjectItem
           title="Projeto 1"
           type="website"
           slug="teste"
           imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU"
         />
-        <ProjetoItem
+        <ProjectItem
           title="Projeto 2"
           type="website"
           slug="teste"
           imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU"
         />
-        <ProjetoItem
+        <ProjectItem
           title="Projeto 3"
           type="website"
           slug="teste"
@@ -40,7 +35,6 @@ export default function Projetos() {
           </a>
         </Link>
       </button>
-      
     </section>
   );
 }

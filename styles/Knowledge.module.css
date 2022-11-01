@@ -1,0 +1,54 @@
+.KnowledgeContainer {
+  width: 100%;
+  gap: 5rem;
+}
+
+.KnowledgeContainer > section {
+  margin: 7rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+.KnowledgeItem {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.KnowledgeItem > p {
+  color: #0ee7b7;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 2024px) {
+  .KnowledgeContainer {
+    margin: 7rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .KnowledgeItem > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .KnowledgeContainer {
+    gap: 5rem;
+    margin: 5.3rem 0;
+  }
+  .KnowledgeContainer > section {
+    gap: 1.2rem;
+    margin-top: 5rem;
+    padding: 0;
+  }
+}
