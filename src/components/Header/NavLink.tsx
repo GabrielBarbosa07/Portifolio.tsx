@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from "../../../styles/Header.module.css";
 
 interface PropsLi {
   title: string;
@@ -13,13 +14,13 @@ export default function NavLink({ title, path }: PropsLi) {
   const isActive = router.pathname === path;
 
   return (
-    <li>
+    <li className={styles.navLi}>
       <Link href={path}>
         <a
           className={
             isActive
-              ? "text-gree-200 hover:opacity-80"
-              : "text-gra-700 hover:opacity-80"
+              ? "text-gree-200 hover:opacity-80 after:bg-gree-200"
+              : "text-gra-700 hover:opacity-80  after:bg-gra-700"
           }
         >
           {title.toUpperCase()}
