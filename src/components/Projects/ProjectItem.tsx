@@ -1,23 +1,31 @@
 import styles from "../../../styles/ProjetosItemContainer.module.css";
 import Link from "next/link";
 import { AiOutlineRightCircle } from "react-icons/ai";
+import { StaticImageData } from "next/image";
 interface ProjectItemProps {
   title: string;
   type: string;
   slug: string;
-  imgUrl: string;
+  imgUrl: string | StaticImageData;
 }
 
-export default function ProjectItem({ title, type, slug, imgUrl }: ProjectItemProps) {
+export default function ProjectItem({
+  title,
+  type,
+  slug,
+  imgUrl,
+}: ProjectItemProps) {
+  const styling = {
+    backgroundImage: `url('${imgUrl}')`,
+  };
+
   return (
     <section className={styles.ProjetosItemContainer}>
       <section
-        style={{
-          backgroundImage: `url(${imgUrl})`,
-        }}
+        style={styling}
         className={`w-[50rem] h-full relative bg-cover bg-no-repeat bg-center`}
       >
-        <div className="absolute w-full h-full bg-gradient opacity-[0.7] duration-700" />
+        <div className="absolute w-full h-full bg-gradient opacity-[0.5] duration-700" />
         <div className={styles.ProjetoItemText}>
           <h1 className="text-gree-200 text-[2.5rem] [text-shadow:_-4px_5px_22px_#11172b]">
             # {title}

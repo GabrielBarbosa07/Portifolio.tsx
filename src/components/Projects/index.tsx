@@ -1,30 +1,35 @@
 import Link from "next/link";
+import firstProject from "../../../public/assets/projects-images/API_de_Filmes.jpeg";
+import secondProject from "../../../public/assets/projects-images/formulario_de_pagamento.png";
+import thirdProject from "../../../public/assets/projects-images/sistema_de_finança.png";
 import SectionTitle from "../SectionTitle";
 import ProjectItem from "./ProjectItem";
 
 export default function Projects() {
+  console.log(firstProject);
+
   return (
     <section className="w-full flex flex-col items-center gap-20 max-[640px]:gap-16 max-[2024px]:my-28 max-[640px]:my-10">
       <SectionTitle title="Ultimos Projetos" />
 
       <section className="w-full flex flex-col gap-16 max-[1024px]:gap-8">
         <ProjectItem
-          title="Projeto 1"
+          title="API de Filmes"
           type="website"
           slug="teste"
-          imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU"
+          imgUrl={firstProject.src}
         />
         <ProjectItem
-          title="Projeto 2"
+          title="Formulário de Pagamento"
           type="website"
           slug="teste"
-          imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU"
+          imgUrl={secondProject.src}
         />
         <ProjectItem
-          title="Projeto 3"
+          title="Minhas Finanças"
           type="website"
           slug="teste"
-          imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZnLpK8k4UMyYkTw2PqEefZz5cE9EcjXkoQ&usqp=CAU"
+          imgUrl={thirdProject.src}
         />
       </section>
 

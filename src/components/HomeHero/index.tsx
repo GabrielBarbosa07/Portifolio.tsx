@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Image from "next/image";
-import picture from "../../assets/my-pic.jpg";
+import picture from "../../../public/my-pic.jpg";
 import styles from "../../../styles/HomeHero.module.css";
 import HeroContent from "./HeroContent";
 import HeroHeader from "./HeroHeader";
