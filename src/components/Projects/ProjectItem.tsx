@@ -28,7 +28,7 @@ export default function ProjectItem({
         <div className="absolute w-full h-full bg-gradient opacity-[0.5] duration-700" />
         <div className={styles.ProjetoItemText}>
           <h1 className="text-gree-200 text-[2.5rem] [text-shadow:_-4px_5px_22px_#11172b]">
-            # {title}
+            #{title}
           </h1>
           <h2 className="text-bl-200 text-[2rem] font-light [text-shadow:_-4px_5px_22px_#11172b]">
             - {type}

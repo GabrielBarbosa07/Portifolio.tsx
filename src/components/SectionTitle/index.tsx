@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 interface SectionTitleProps {
-  title: string;
+  title: string | ReactNode
   description?: string | ReactNode;
 }
 
@@ -10,7 +10,7 @@ export default function SectionTitle({
   description,
 }: SectionTitleProps) {
   return (
-    <div className="w-full flex flex-col items-start gap-2 max-[640px]:items-center">
+    <div className="w-full flex flex-col items-start gap-2 max-[640px]:items-center max-[640px]:justify-center">
       <h1 className="text-gree-200 text-7xl font-sans font-semibold max-[1024px]:text-[2.5rem] max-[640px]:text-[2rem]">
         #{title}
       </h1>

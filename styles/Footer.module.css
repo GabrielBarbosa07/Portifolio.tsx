@@ -1,0 +1,54 @@
+.footer {
+  width: 100%;
+  padding-top: 2rem;
+  border-top: 1px solid #1b2138;
+  height: 5rem;
+}
+
+.footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer > div > button {
+  background: none;
+  border: none;
+  color: #7ac7e3;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerIcons > svg {
+  width: 2rem;
+  height: 2rem;
+  color: #848da0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footerIcons > svg:hover {
+  color: #0ee7b7;
+}
+
+@media (max-width: 450px) {
+  .footer > div > button {
+    font-size: 0.9rem;
+  }
+
+  .footerIcons {
+    gap: 0.5rem;
+  }
+
+  .footerIcons > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

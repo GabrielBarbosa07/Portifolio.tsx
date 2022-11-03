@@ -1,0 +1,90 @@
+.form {
+  margin-top: 8rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.inputForm {
+  height: 3rem;
+  width: 100%;
+  background-color: #1e253e;
+  border: 1px solid #313958;
+  border-radius: 0.5rem;
+  padding: 1.7rem 1.5rem;
+  color: #0ee7b7;
+  font-size: 1.2rem;
+  outline: none;
+  transition: 0.5s;
+}
+
+.inputForm:focus {
+  border-color: #0ee7b7;
+}
+
+.inputForm::placeholder {
+  color: #0ee7b7;
+}
+.textAreaForm {
+  height: 10rem;
+  width: 100%;
+  background-color: #1e253e;
+  border: 1px solid #313958;
+  border-radius: 0.5rem;
+  padding: 1.7rem 1.5rem;
+  color: #0ee7b7;
+  font-size: 1.2rem;
+  outline: none;
+  transition: 0.5s;
+  resize: none;
+  grid-column: 1 / 3;
+}
+
+.textAreaForm:focus {
+  border-color: #0ee7b7;
+}
+
+.textAreaForm::placeholder {
+  color: #0ee7b7;
+}
+.form > button {
+  border: none;
+  padding: 1rem 2.5rem;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #0ee7b7;
+  transition: 0.5s;
+  width: fit-content;
+}
+
+.form > button:not(:disabled):hover{
+    background-color: #0cb893;
+}
+
+.form > button:disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  .form {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .inputForm {
+    padding: 1.4rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .form > button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
