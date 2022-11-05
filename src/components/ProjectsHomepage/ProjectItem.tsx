@@ -1,4 +1,4 @@
-import styles from "../../../styles/ProjetosItemContainer.module.css";
+import styles from "../../../styles/ProjectsHomePage.module.css";
 import Link from "next/link";
 import { AiOutlineRightCircle } from "react-icons/ai";
 import { StaticImageData } from "next/image";
@@ -25,7 +25,7 @@ export default function ProjectItem({
         style={styling}
         className={`w-[50rem] h-full relative bg-cover bg-no-repeat bg-center`}
       >
-        <div className="absolute w-full h-full bg-gradient opacity-[0.5] duration-700" />
+        <div className="absolute w-full h-full bg-gradient opacity-60 duration-700 hover:opacity-40" />
         <div className={styles.ProjetoItemText}>
           <h1 className="text-gree-200 text-[2.5rem] [text-shadow:_-4px_5px_22px_#11172b]">
             #{title}

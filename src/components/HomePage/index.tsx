@@ -2,7 +2,7 @@ import Experiences from "../Experiences";
 import FormContact from "../FormContact";
 import { HomeHero } from "../HomeHero";
 import Knowledge from "../Knowledge";
-import Projects from "../Projects";
+import Projects from "../ProjectsHomepage";
 
 export default function HomePage() {
   return (

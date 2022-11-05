@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import FooterComponent from "../components/Footer";
 import HomePage from "../components/HomePage";
 
 const Home: NextPage = () => {
@@ -10,7 +9,7 @@ const Home: NextPage = () => {
           <title>Meu Portifólio</title>
         </Head>
         <HomePage />
-        <FooterComponent />
+        
     </div>
   );
 };

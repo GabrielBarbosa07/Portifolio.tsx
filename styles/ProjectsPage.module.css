@@ -1,0 +1,71 @@
+/*Estilização da pagina de projetos*/
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 77vh;
+  padding: 0 1rem;
+}
+
+.projectsContainer > main {
+  margin: 5rem auto;
+  max-width: 90rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.projectItemContainer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projectItemAnchor {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-radius: 0.5rem;
+  border: 1px solid #313958;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.projectItemAnchor:hover {
+  border-color: #0ee7b7;
+}
+
+.projectItemAnchor > section {
+  z-index: 2;
+}
+
+.projectItemAnchor > section > h1 {
+  color: #0ee7b7;
+  font-size: 1.5rem;
+}
+
+.projectItemAnchor > section > h2 {
+  color: #7ac7e3;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .projectsContainer > main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .projectsContainer > main {
+    grid-template-columns: 1fr;
+  }
+}

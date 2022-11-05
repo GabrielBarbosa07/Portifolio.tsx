@@ -1,5 +1,7 @@
 .footer {
   width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
   padding-top: 2rem;
   border-top: 1px solid #1b2138;
   height: 5rem;
@@ -36,6 +38,12 @@
 
 .footerIcons > svg:hover {
   color: #0ee7b7;
+}
+
+@media (max-width: 769px) {
+  .footer {
+    padding: 2rem 1rem 0 1rem;
+  }
 }
 
 @media (max-width: 450px) {
