@@ -6,12 +6,19 @@ interface PropsLi {
   title: string;
   path: string;
   isActive?: boolean;
+  includes?: boolean;
 }
 
-export default function NavLink({ title, path }: PropsLi) {
+export default function NavLink({ title, path, includes = false }: PropsLi) {
   const router = useRouter();
 
-  const isActive = router.pathname === path;
+  const verifyIfIsActive = () => {
+    if (includes) return router.pathname.includes(path);
+
+    return router.pathname === path;
+  };
+
+  const isActive = verifyIfIsActive();
 
   return (
     <li className={styles.navLi}>

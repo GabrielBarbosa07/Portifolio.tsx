@@ -2,13 +2,41 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 80vh;
 }
 
 .detailsContainer > main {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
+  max-width: 100rem;
   width: 100%;
   padding: 0 5rem;
+}
+
+.detailsContainer > main > p {
+  color: #c4c4c4;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.detailsContainer > main > button {
+  background-color: #0ee7b7;
+  padding: 0.8rem 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  transition: 0.5s;
+  margin-top: 2rem;
+}
+
+.detailsContainer > main > button > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.detailsContainer > main > button > a:hover {
+  color: #0cb893;
 }
 
 .BannerOfProjectContainer {
@@ -50,6 +78,22 @@
 }
 
 @media (max-width: 640px) {
+  .detailsContainer > main {
+    padding: 0 2.5rem;
+  }
+
+  .detailsContainer > main > p {
+    font-size: 1rem;
+  }
+
+  .detailsContainer > main > button {
+    padding: 0.7rem 2rem;
+  }
+
+  .detailsContainer > main > button > a {
+    font-size: 0.9rem;
+  }
+
   .BannerOfProjectContainer {
     padding: 2rem 2.5rem;
     height: 20rem;

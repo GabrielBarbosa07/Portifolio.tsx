@@ -5,7 +5,7 @@ import FooterComponent from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-bl-900 font-normal font-sans min-h-screen min-w-[280px]">
+    <div className="bg-bl-900 font-normal font-sans h-full min-w-[280px]">
       <Header />
       <Component {...pageProps} />;
       <FooterComponent />

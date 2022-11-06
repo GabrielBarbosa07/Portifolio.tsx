@@ -5,7 +5,7 @@ export function Header() {
     <header className="w-full h-16 flex justify-center items-center border-b-bl-700">
       <ul className="flex gap-8 items-center">
         <NavLink title="Home" path="/" />
-        <NavLink title="Projetos" path="/projetos" />
+        <NavLink title="Projetos" path="/projetos" includes/>
       </ul>
     </header>
   );
