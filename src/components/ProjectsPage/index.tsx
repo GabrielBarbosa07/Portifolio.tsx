@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
 import Link from "next/link";
 import styles from "../../../styles/ProjectsPage.module.css";
-
 interface ProjectItemProps {
   title: string;
   type: string;
