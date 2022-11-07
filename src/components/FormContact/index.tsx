@@ -18,7 +18,6 @@ export default function FormContact() {
           </div>
         }
       />
-
       <Form />
     </section>
   );
