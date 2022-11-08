@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiOutlineRightCircle } from "react-icons/ai";
 import { StaticImageData } from "next/image";
 interface ProjectItemProps {
+  id?: number
   title: string;
   type: string;
   slug: string;
