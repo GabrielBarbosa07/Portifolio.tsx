@@ -1,32 +1,39 @@
 import styles from "../../../../styles/DetailsOfProject.module.css";
 import BannerOfProject from "../../../components/BannerOfProject";
-import firstProject from "../../../../public/assets/projects-images/API_de_Filmes.jpeg";
+import { useRouter } from "next/router";
+import { projects } from "../../../data/DataOfProjects";
 
 export default function DetailsOfProject() {
+  const { query } = useRouter();
+
+  //Filtrando o projeto pela url
+  const filteredProject = projects.filter(
+    (projeto) => query.slug === projeto.slug
+  );
+
   return (
     <section className={styles.detailsContainer}>
-      <BannerOfProject
-        title="Projeto 01"
-        type="Website"
-        imgUrl={firstProject.src}
-      />
+      {filteredProject.map((project) => {
+        return (
+          <>
+            <BannerOfProject
+              key={project.id}
+              title={project.title}
+              type={project.type}
+              imgUrl={project.imgUrl}
+            />
 
-      <main>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          non vero quae voluptatem maxime culpa delectus quidem qui, voluptas
-          quam fugit amet? Iusto itaque culpa quo, nulla, perferendis incidunt
-          sed aliquid deserunt sapiente unde, facilis ducimus ipsa non? Ipsa
-          recusandae accusantium quidem totam aliquid dolores, officia provident
-          repellendus aut nemo commodi voluptatem illum magni neque, molestiae
-          vero aperiam esse, quam laborum quis unde repellat iure? Quae saepe
-          obcaecati ipsam, quam deleniti nemo quidem, temporibus iusto iste
-          pariatur animi, iure sequi.
-        </p>
-        <button type="button">
-          <a href="#">Ver projeto online</a>
-        </button>
-      </main>
+            <main>
+              <p>{project.description}</p>
+              <button type="button">
+                <a href={project.url} target="_blank" rel="noreferrer">
+                  Ver projeto online
+                </a>
+              </button>
+            </main>
+          </>
+        );
+      })}
     </section>
   );
 }
