@@ -2,6 +2,7 @@ import styles from "../../../../styles/DetailsOfProject.module.css";
 import BannerOfProject from "../../../components/BannerOfProject";
 import { useRouter } from "next/router";
 import { projects } from "../../../data/DataOfProjects";
+import Head from "next/head";
 
 export default function DetailsOfProject() {
   const { query } = useRouter();
@@ -16,6 +17,16 @@ export default function DetailsOfProject() {
       {filteredProject.map((project) => {
         return (
           <>
+            <Head>
+              <title>{project.title} | Meu portifólio</title>
+              <meta name="description" content={project.description} />
+              <meta property="og:image" content={project.imgUrl} />
+              <meta property="og:image:secure_url" content={project.imgUrl} />
+              <meta name="twitter:image" content={project.imgUrl} />
+              <meta name="twitter:image:src" content={project.imgUrl} />
+              <meta property="og:description" content={project.description} />
+            </Head>
+
             <BannerOfProject
               key={project.id}
               title={project.title}
