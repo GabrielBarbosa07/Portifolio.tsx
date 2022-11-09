@@ -12,7 +12,7 @@ export default function ExperienceItem({
   description,
 }: ExperienceProps) {
   return (
-    <div className={styles.ItemContainer}>
+    <div className={styles.ItemContainer} data-aos="fade-up">
       <div className="bg-gradient h-80 flex flex-col items-start justify-start">
         <h1>{year}</h1>
         <h2>{title}</h2>

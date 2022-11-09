@@ -15,7 +15,7 @@ export default function KnowledgeItem({
   imgTitle,
 }: KnowledgeItemProps) {
   return (
-    <section className={styles.KnowledgeItem}>
+    <section className={styles.KnowledgeItem} data-aos="fade-up">
       <p>{title}</p>
       <Image id="img-hard" className="hover:scale-90 duration-300" title={imgTitle} src={src} alt={alt} width={80} height={80}/>
     </section>

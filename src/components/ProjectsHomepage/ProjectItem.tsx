@@ -21,7 +21,7 @@ export default function ProjectItem({
   };
 
   return (
-    <section className={styles.ProjetosItemContainer}>
+    <section className={styles.ProjetosItemContainer} data-aos="fade-up">
       <section
         style={styling}
         className={`w-[50rem] h-full relative bg-cover bg-no-repeat bg-center`}

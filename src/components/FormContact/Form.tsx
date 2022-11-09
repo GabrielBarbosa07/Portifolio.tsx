@@ -2,7 +2,7 @@ import style from "../../../styles/FormContact.module.css";
 
 export default function Form() {
   return (
-    <form className={style.form}>
+    <form className={style.form} data-aos="fade-up">
       <input className={style.inputForm} placeholder="Nome" required />
       <input
         className={style.inputForm}

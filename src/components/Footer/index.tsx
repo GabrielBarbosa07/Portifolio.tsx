@@ -12,8 +12,8 @@ export default function FooterComponent() {
 
   const handleScrollTop = () => {
     window.scroll({
-      top: 0,
       behavior: "smooth",
+      top: 0,
     });
   };
 

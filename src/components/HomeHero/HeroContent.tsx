@@ -18,7 +18,7 @@ export default function HeroContent({
   valueTwo,
 }: heroContentProps) {
   return (
-    <main key={valueOne} className={styles.hero}>
+    <main key={valueOne} className={styles.hero} data-aos="zoom-in">
       <div className="p-4 text-white w-96 bg-gradient font-mono font-light hover:brightness-125 transition-all duration-700 max-[640px]:w-full">
         <span className="block text-gra-600">{comment}</span>
         <span className="text-[#c38cdd] mr-2">{objName}</span>
