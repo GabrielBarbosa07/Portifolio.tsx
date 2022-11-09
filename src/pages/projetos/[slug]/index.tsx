@@ -8,7 +8,7 @@ export default function DetailsOfProject() {
 
   //Filtrando o projeto pela url
   const filteredProject = projects.filter(
-    (projeto) => query.slug === projeto.slug
+    (project) => query.slug === project.slug
   );
 
   return (
