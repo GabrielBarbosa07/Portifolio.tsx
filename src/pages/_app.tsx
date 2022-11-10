@@ -1,8 +1,9 @@
 import "../../styles/globals.css";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import { Header } from "../components/Header";
 import FooterComponent from "../components/Footer";
-import Head from "next/head";
+import { Toaster } from "react-hot-toast";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Sou um desenvolvedor Front-end e aqui apresento meu portifólio e alguns projetos desenvolvidos por mim!"
         />
       </Head>
+      <Toaster position="bottom-right"/>
       <Header />
       <Component {...pageProps} />;
       <FooterComponent />

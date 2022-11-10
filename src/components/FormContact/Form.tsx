@@ -1,14 +1,26 @@
 import style from "../../../styles/FormContact.module.css";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import toast from "react-hot-toast";
 
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  async function handleSubmit(e: any) {
+  function handleSubmit(e: any) {
     e.preventDefault();
+
+    if (name === "" || email === "" || message === "") {
+      toast("Preencha todos os campos para enviar sua mensagem!", {
+        style: {
+          background: "#d45d5d",
+          color: "#fff",
+          fontWeight: "bold",
+        },
+      });
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -19,15 +31,31 @@ export default function Form() {
       )
       .then(
         (result) => {
-          alert("Mensagem enviada com sucesso!");
+          setName("");
+          setEmail("");
+          setMessage("");
+
+          toast("Mensagem Enviada com Sucesso! :)", {
+            style: {
+              background: "#7AC7E3",
+              color: "#fff",
+              fontWeight: "bold",
+            },
+          });
         },
         (error) => {
-          console.log(error.text);
+          toast(
+            "Ocorreu um erro ao tentar enviar sua mensagem. Tente novamente!",
+            {
+              style: {
+                background: "#d45d5d",
+                color: "#fff",
+                fontWeight: "bold",
+              },
+            }
+          );
         }
       );
-    setName("");
-    setEmail("");
-    setMessage("");
   }
 
   return (
@@ -36,7 +64,6 @@ export default function Form() {
         className={style.inputForm}
         name="name"
         placeholder="Nome"
-        required
         value={name}
         onChange={({ target }) => setName(target.value)}
       />
@@ -45,7 +72,6 @@ export default function Form() {
         name="email"
         type="email"
         placeholder="Email"
-        required
         value={email}
         onChange={({ target }) => setEmail(target.value)}
       />
@@ -53,7 +79,6 @@ export default function Form() {
         className={style.textAreaForm}
         name="message"
         placeholder="Mensagem"
-        required
         value={message}
         onChange={({ target }) => setMessage(target.value)}
       ></textarea>
