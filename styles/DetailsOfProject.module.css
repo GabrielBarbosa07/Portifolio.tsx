@@ -5,21 +5,21 @@
   min-height: 80vh;
 }
 
-.detailsContainer > main {
+.detailsContainer > div > main {
   margin: 2rem auto;
   max-width: 100rem;
   width: 100%;
   padding: 0 5rem;
 }
 
-.detailsContainer > main > p {
+.detailsContainer > div > main > p {
   color: #c4c4c4;
   font-size: 1.5rem;
   font-weight: 300;
   text-align: justify;
 }
 
-.detailsContainer > main > button {
+.detailsContainer > div > main > button {
   background-color: #0ee7b7;
   padding: 0.8rem 3rem;
   border-radius: 0.5rem;
@@ -28,14 +28,14 @@
   margin-top: 2rem;
 }
 
-.detailsContainer > main > button > a {
+.detailsContainer > div > main > button > a {
   color: #fff;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-.detailsContainer > main > button > a:hover {
+.detailsContainer > div > main > button > a:hover {
   color: #0cb893;
 }
 
@@ -78,19 +78,19 @@
 }
 
 @media (max-width: 640px) {
-  .detailsContainer > main {
+  .detailsContainer > div > main {
     padding: 0 2.5rem;
   }
 
-  .detailsContainer > main > p {
+  .detailsContainer > div > main > p {
     font-size: 1rem;
   }
 
-  .detailsContainer > main > button {
+  .detailsContainer > div > main > button {
     padding: 0.7rem 2rem;
   }
 
-  .detailsContainer > main > button > a {
+  .detailsContainer > div > main > button > a {
     font-size: 0.9rem;
   }
 

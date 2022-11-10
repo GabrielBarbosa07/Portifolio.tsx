@@ -21,6 +21,7 @@ export function HomeHero() {
 
         <section className={styles.heroContainer}>
           <HeroContent
+          key={0}
             comment="//Minha apresentação"
             objName="Infos"
             keyOne="Nome:"
@@ -30,6 +31,7 @@ export function HomeHero() {
           />
 
           <HeroContent
+          key={1}
             objName="Cargo"
             keyOne="Função:"
             valueOne="Dev Front-end,"

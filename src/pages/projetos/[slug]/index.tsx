@@ -16,7 +16,7 @@ export default function DetailsOfProject() {
     <section className={styles.detailsContainer}>
       {filteredProject.map((project) => {
         return (
-          <>
+          <div key={project.slug}>
             <Head>
               <title>{project.title} | Meu portifólio</title>
               <meta name="description" content={project.description} />
@@ -42,7 +42,7 @@ export default function DetailsOfProject() {
                 </a>
               </button>
             </main>
-          </>
+          </div>
         );
       })}
     </section>
