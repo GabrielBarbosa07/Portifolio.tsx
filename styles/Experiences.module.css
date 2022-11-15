@@ -84,6 +84,7 @@
   .ItemContainer > div {
     height: auto;
     padding: 2rem;
+    max-width: 100%;
   }
   .ItemContainer > div > h1 {
     font-size: 2rem;

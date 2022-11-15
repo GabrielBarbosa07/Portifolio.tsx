@@ -12,25 +12,25 @@ export default function Experiences() {
           key={0}
           year="2022"
           title="Dev Front-end"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo quaerat, reprehenderit ipsa aliquid"
+          description="Desenvolvimento um portólio feito com ReactJs. Utilizando diversos frameworks de animações."
         />
         <ExperienceItem
           key={1}
           year="2022"
           title="Dev Front-end"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo quaerat, reprehenderit ipsa aliquid"
+          description="Desenvolvimento de um site de pesquisa e detalhes de filmes e series. Com um sistema de autênticação de usúario."
         />
         <ExperienceItem
           key={2}
           year="2022"
           title="Dev Front-end"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo quaerat, reprehenderit ipsa aliquid"
+          description="Desenvolvimento de um formulãrio de pagamento com cartão de crédito. Utilizando imask."
         />
         <ExperienceItem
           key={3}
           year="2022"
           title="Dev Front-end"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo quaerat, reprehenderit ipsa aliquid"
+          description="Desenvolvimento de uma página de controlhe financeiro pessoal. Utilizando localStorage."
         />
       </section>
     </section>
