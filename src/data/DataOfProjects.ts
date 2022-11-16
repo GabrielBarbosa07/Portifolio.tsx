@@ -40,7 +40,7 @@ export const projects = [
     description: "Calculadora feita com Javascript Vanilla. Incluso com o modo de troca de temas.",
     type: "website",
     slug: "Calculadora_Js",
-    url: "/url",
+    url: "https://gabrielbarbosa07.github.io/Calculadora_JS/",
   },
   {
     id: 4,
