@@ -1,8 +1,8 @@
-import firstProject from "../assets/projects-images/API_de_Filmes.jpeg"
+import firstProject from "../assets/projects-images/API_de_Filmes.jpeg";
 import secondProject from "../assets/projects-images/formulario_de_pagamento.png";
 import thirdProject from "../assets/projects-images/sistema_de_finança.png";
-import fourthProject from "../assets/projects-images/calculadora.png"
-import fifthProject from "../assets/projects-images/clima_tempo.png"
+import fourthProject from "../assets/projects-images/calculadora.png";
+import fifthProject from "../assets/projects-images/clima_tempo.png";
 
 export const projects = [
 
@@ -10,7 +10,7 @@ export const projects = [
     id: 0,
     imgUrl: firstProject.src,
     title: " API de Filmes",
-    description: "Site para pesquisa e consulta de filmes, séries e desenhos. Foi desenvolvido com React e com seus Hooks.",
+    description: "Site para pesquisa e consulta de filmes, séries e desenhos. Foi desenvolvido com React e com seus Hooks. Também incrementei um sistema de autenticação de usuário utilizando contextAPI e localStorage para armazenar os usuários cadastrados.",
     type: "website",
     slug: "API_de_Filmes",
     url: "https://biblioteca-de-filmes-beta.vercel.app/",
