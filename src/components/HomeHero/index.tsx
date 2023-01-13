@@ -37,7 +37,7 @@ export function HomeHero() {
             keyOne="Função:"
             valueOne="Dev Front-end,"
             keyTwo="Senioridade:"
-            valueTwo="Estágiario/Junior,"
+            valueTwo="Estágiario / Junior,"
           />
         </section>
       </div>
