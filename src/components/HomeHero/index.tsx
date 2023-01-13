@@ -7,8 +7,9 @@ import HeroHeader from "./HeroHeader";
 
 export function HomeHero() {
   return (
-    <section className="flex max-[2024px]:my-28 max-[640px]:my-10 max-[640px]:flex-col-reverse gap-8 items-center justify-center bg-bl-900 min-h-full"
-    data-aos="fade-up"
+    <section
+      className="flex max-[2024px]:my-28 max-[640px]:my-10 max-[640px]:flex-col-reverse gap-8 items-center justify-center bg-bl-900 min-h-full"
+      data-aos="fade-up"
     >
       <Image
         src={picture}
@@ -21,7 +22,7 @@ export function HomeHero() {
 
         <section className={styles.heroContainer}>
           <HeroContent
-          key={0}
+            key={0}
             comment="//Minha apresentação"
             objName="Infos"
             keyOne="Nome:"
@@ -31,12 +32,12 @@ export function HomeHero() {
           />
 
           <HeroContent
-          key={1}
+            key={1}
             objName="Cargo"
             keyOne="Função:"
             valueOne="Dev Front-end,"
             keyTwo="Senioridade:"
-            valueTwo="Estágiario,"
+            valueTwo="Estágiario/Junior,"
           />
         </section>
       </div>
