@@ -12,7 +12,7 @@ export default function Experiences() {
           key={0}
           year="2022"
           title="Dev Front-end"
-          description="Desenvolvimento um portólio feito com ReactJs. Utilizando diversos frameworks de animações."
+          description="Desenvolvi um portólio feito com ReactJs. Utilizando diversos frameworks de animações."
         />
         <ExperienceItem
           key={1}
