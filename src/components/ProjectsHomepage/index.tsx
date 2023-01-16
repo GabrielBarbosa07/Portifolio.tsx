@@ -9,7 +9,7 @@ export default function Projects() {
       <SectionTitle title="Ultimos Projetos" />
 
       <section className="w-full flex flex-col gap-16 max-[1024px]:gap-8">
-        {projects.slice(0, 3).reverse().map((project) => {
+        {projects.slice(0, 3).map((project) => {
           return (
             <ProjectItem
               key={project.id}

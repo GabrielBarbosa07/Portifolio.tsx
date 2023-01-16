@@ -9,7 +9,7 @@ export const projects = [
   {
     id: 0,
     imgUrl: firstProject.src,
-    title: " API de Filmes",
+    title: "API de Filmes",
     description: "Site para pesquisa e consulta de filmes, séries e desenhos. Foi desenvolvido com React e com seus Hooks. Também incrementei um sistema de autenticação de usuário utilizando contextAPI e localStorage para armazenar os usuários cadastrados.",
     type: "website",
     slug: "API_de_Filmes",
