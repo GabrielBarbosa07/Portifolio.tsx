@@ -20,7 +20,7 @@ export default function HeroContent({
   return (
     <main key={valueOne} className={styles.hero} data-aos="zoom-in">
       <div className="p-4 text-white w-96 bg-gradient font-mono font-light hover:brightness-125 transition-all duration-700 max-[640px]:w-full">
-        <span className="block text-gra-600">{comment}</span>
+        <span className="block text-gra-600 mb-2">{comment}</span>
         <span className="text-[#c38cdd] mr-2">{objName}</span>
         {"\u007b"}
         <div className="mt-1 ml-4">

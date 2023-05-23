@@ -8,7 +8,7 @@ import HeroHeader from "./HeroHeader";
 export function HomeHero() {
   return (
     <section
-      className="flex max-[2024px]:my-28 max-[640px]:my-10 max-[640px]:flex-col-reverse gap-8 items-center justify-center bg-bl-900 min-h-full"
+      className="flex w-full max-[2024px]:my-28 max-[640px]:my-5 max-[640px]:flex-col-reverse gap-8 items-center justify-center bg-bl-900 min-h-full"
       data-aos="fade-up"
     >
       <Image
@@ -17,7 +17,7 @@ export function HomeHero() {
         className="max-[1536px]:w-1/6 max-[1024px]:w-[50rem] rounded-3xl"
       />
 
-      <div className=" min-[210px]:w-full">
+      <div className="w-full">
         <HeroHeader />
 
         <section className={styles.heroContainer}>
