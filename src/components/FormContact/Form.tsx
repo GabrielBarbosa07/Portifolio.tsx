@@ -62,6 +62,7 @@ export default function Form() {
     <form className={style.form} data-aos="fade-up" onSubmit={handleSubmit}>
       <input
         className={style.inputForm}
+        title="Nome"
         name="name"
         placeholder="Nome"
         value={name}
@@ -69,6 +70,7 @@ export default function Form() {
       />
       <input
         className={style.inputForm}
+        title="Email"
         name="email"
         type="email"
         placeholder="Email"
@@ -77,12 +79,13 @@ export default function Form() {
       />
       <textarea
         className={style.textAreaForm}
+        title="Mensagem"
         name="message"
         placeholder="Mensagem"
         value={message}
         onChange={({ target }) => setMessage(target.value)}
       ></textarea>
-      <button type="submit">ENVIAR</button>
+      <button title="Enviar" type="submit">ENVIAR</button>
     </form>
   );
 }

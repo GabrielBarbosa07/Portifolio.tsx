@@ -24,7 +24,7 @@ export default function ProjectsPage() {
       </Head>
 
       <main>
-        {projects.reverse().map((project) => {
+        {projects.map((project) => {
           return (
             <ProjectPageItem
               key={project.id}

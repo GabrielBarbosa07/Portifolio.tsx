@@ -3,6 +3,7 @@ import secondProject from "../assets/projects-images/formulario_de_pagamento.png
 import thirdProject from "../assets/projects-images/sistema_de_finança.png";
 import fourthProject from "../assets/projects-images/calculadora.png";
 import fifthProject from "../assets/projects-images/clima_tempo.png";
+import sixthProject from "../assets/projects-images/fitness_exercises.png";
 
 export const projects = [
 
@@ -50,6 +51,15 @@ export const projects = [
     type: "website",
     slug: "Clima_Tempo",
     url: "https://clima-tempo-six.vercel.app/",
+  },
+  {
+    id: 5,
+    imgUrl: sixthProject.src,
+    title: "Fitness Exercises",
+    description: "Site para busca de exercícios físicos, e ajuda de como executá-los corretamente auxiliado de Gif e videos do Youtube.",
+    type: "website",
+    slug: "Fitness_Exercises",
+    url: "https://fitness-exercises-web.vercel.app/",
   },
 
 ];
