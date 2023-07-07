@@ -4,6 +4,7 @@ import thirdProject from "../assets/projects-images/sistema_de_finança.png";
 import fourthProject from "../assets/projects-images/calculadora.png";
 import fifthProject from "../assets/projects-images/clima_tempo.png";
 import sixthProject from "../assets/projects-images/fitness_exercises.png";
+import seventhProject from "../assets/projects-images/netflix.png";
 
 export const projects = [
 
@@ -60,6 +61,15 @@ export const projects = [
     type: "website",
     slug: "Fitness_Exercises",
     url: "https://fitness-exercises-web.vercel.app/",
+  },
+  {
+    id: 6,
+    imgUrl: seventhProject.src,
+    title: "Netflix Clone",
+    description: "Clone de umas das maiores plataformas de streamers. Feito de ponta a ponta com Prisma e Next.js 13.",
+    type: "website",
+    slug: "Netflix_Clone",
+    url: "https://netflix-clone-gb.vercel.app",
   },
 
 ];
